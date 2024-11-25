@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mark Attendance</title>
+</head>
+<body>
+    <h1>Mark Attendance</h1>
+    <form action="/faculty/markAttendance" method="POST">
+        <label for="studentId">Student ID:</label>
+        <input type="number" name="studentId" required><br><br>
+        
+        <label for="date">Date:</label>
+        <input type="date" name="date" required><br><br>
+
+        <label for="status">Attendance Status:</label>
+        <select name="status" required>
+            <option value="present">Present</option>
+            <option value="absent">Absent</option>
+        </select><br><br>
+
+        <button type="submit">Mark Attendance</button>
+    </form>
+    <a href="/faculty/dashboard">Back to Dashboard</a>
+</body>
+</html>

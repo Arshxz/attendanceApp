@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Attendance</title>
+</head>
+<body>
+    <h1>Your Attendance</h1>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+        <% attendance.forEach(function(att) { %>
+        <tr>
+            <td><%= att.date %></td>
+            <td><%= att.status %></td>
+        </tr>
+        <% }); %>
+    </table>
+    <a href="/student/dashboard">Back to Dashboard</a>
+</body>
+</html>
